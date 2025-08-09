@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Blogging Platform API - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 0 15px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 15px 0;
+            background: #fff;
+            padding: 12px 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.1);
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        small {
+            color: #666;
+            display: block;
+            margin-top: 4px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blogging Platform API - Endpoints</h1>
+    <ul>
+        <li>
+            <a >GET /posts/</a>
+            <small>Get all blog posts</small>
+        </li>
+        <li>
+            <a >GET /posts/&lt;id&gt;/</a>
+            <small>Get single blog post by ID</small>
+        </li>
+        <li>
+            <small>POST /posts/ (create new post - use API client like Postman)</small>
+        </li>
+        <li>
+            <small>PUT /posts/&lt;id&gt;/ (update post by ID - use API client)</small>
+        </li>
+        <li>
+            <small>DELETE /posts/&lt;id&gt;/ (delete post by ID - use API client)</small>
+        </li>
+        <li>
+            <a >GET /posts/search/&lt;term&gt;/</a>
+            <small>Search posts by term</small>
+        </li>
+    </ul>
+</body>
+</html>
